@@ -18,24 +18,108 @@
         .hidden {
             display: none;
         }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Formulario de Actividades</h1>
         <form id="activityForm">
+            <!-- Actividad General -->
             <div class="activity">
-                <label for="activity1">Actividad 1 (10:00 AM - 11:00 AM) - Plazas restantes: <span id="quota1">5</span></label>
-                <input type="checkbox" id="activity1" name="activities" value="activity1">
+                <label for="generalActivity">Actividad General</label>
+                <input type="checkbox" id="generalActivity" name="activities" value="generalActivity" checked disabled>
+            </div>
+
+            <!-- Actividades del Martes -->
+            <div class="section-title">Actividades del Martes</div>
+            <div class="activity">
+                <label for="tuesdayActivity1">Visita a nuestros mayores (9:30 AM - 12:15 PM) - Plazas restantes: <span id="tuesdayQuota1">24</span></label>
+                <input type="checkbox" id="tuesdayActivity1" name="tuesdayActivities" value="tuesdayActivity1">
             </div>
             <div class="activity">
-                <label for="activity2">Actividad 2 (10:00 AM - 11:00 AM) - Plazas restantes: <span id="quota2">5</span></label>
-                <input type="checkbox" id="activity2" name="activities" value="activity2">
+                <label for="tuesdayActivity2">Donación de sangre (9:30 AM - 12:30 PM)</label>
+                <input type="checkbox" id="tuesdayActivity2" name="tuesdayActivities" value="tuesdayActivity2">
             </div>
             <div class="activity">
-                <label for="activity3">Actividad 3 (11:00 AM - 12:00 PM) - Plazas restantes: <span id="quota3">5</span></label>
-                <input type="checkbox" id="activity3" name="activities" value="activity3">
+                <label for="tuesdayActivity3">Obra misional</label>
+                <input type="checkbox" id="tuesdayActivity3" name="tuesdayActivities" value="tuesdayActivity3">
+                <div class="hidden" id="tuesdaySubActivities3">
+                    <div class="activity">
+                        <label for="tuesdaySubActivity3a">Taller "Cómo contactar (con prácticas)"</label>
+                        <input type="checkbox" id="tuesdaySubActivity3a" name="tuesdaySubActivities3" value="tuesdaySubActivity3a">
+                    </div>
+                    <div class="activity">
+                        <label for="tuesdaySubActivity3b">Taller "Las misiones de servicio y cómo predicar con el servicio"</label>
+                        <input type="checkbox" id="tuesdaySubActivity3b" name="tuesdaySubActivities3" value="tuesdaySubActivity3b">
+                    </div>
+                    <div class="activity">
+                        <label for="tuesdaySubActivity3c">Taller "Misioneros retornados, y ¿ahora que?"</label>
+                        <input type="checkbox" id="tuesdaySubActivity3c" name="tuesdaySubActivities3" value="tuesdaySubActivity3c">
+                    </div>
+                    <div class="activity">
+                        <label for="tuesdaySubActivity3d">Taller "Cómo compartir el evangelio con amigos y familiares"</label>
+                        <input type="checkbox" id="tuesdaySubActivity3d" name="tuesdaySubActivities3" value="tuesdaySubActivity3d">
+                    </div>
+                    <div class="activity">
+                        <label for="tuesdaySubActivity3e">Grabación de videos de testimonios y números musicales para publicar en redes (Plazas: 10) - Plazas restantes: <span id="tuesdayQuota3e">10</span></label>
+                        <input type="checkbox" id="tuesdaySubActivity3e" name="tuesdaySubActivities3" value="tuesdaySubActivity3e">
+                    </div>
+                    <div class="activity">
+                        <label for="tuesdaySubActivity3f">Contactar por la calle (Plazas: 56) - Plazas restantes: <span id="tuesdayQuota3f">56</span></label>
+                        <input type="checkbox" id="tuesdaySubActivity3f" name="tuesdaySubActivities3" value="tuesdaySubActivity3f">
+                    </div>
+                </div>
             </div>
+            <div class="activity">
+                <label for="tuesdayActivity4">Historia familiar y la aplicación "Participa"</label>
+                <input type="checkbox" id="tuesdayActivity4" name="tuesdayActivities" value="tuesdayActivity4">
+            </div>
+
+            <!-- Actividades del Miércoles -->
+            <div class="section-title">Actividades del Miércoles</div>
+            <div class="activity">
+                <label for="wednesdayActivity1">Visita a nuestros mayores (9:30 AM - 12:15 PM) - Plazas restantes: <span id="wednesdayQuota1">24</span></label>
+                <input type="checkbox" id="wednesdayActivity1" name="wednesdayActivities" value="wednesdayActivity1">
+            </div>
+            <div class="activity">
+                <label for="wednesdayActivity2">Historia familiar y la aplicación "Participa"</label>
+                <input type="checkbox" id="wednesdayActivity2" name="wednesdayActivities" value="wednesdayActivity2">
+            </div>
+            <div class="activity">
+                <label for="wednesdayActivity3">Obra misional</label>
+                <input type="checkbox" id="wednesdayActivity3" name="wednesdayActivities" value="wednesdayActivity3">
+                <div class="hidden" id="wednesdaySubActivities3">
+                    <div class="activity">
+                        <label for="wednesdaySubActivity3a">Taller "Cómo contactar (con prácticas)"</label>
+                        <input type="checkbox" id="wednesdaySubActivity3a" name="wednesdaySubActivities3" value="wednesdaySubActivity3a">
+                    </div>
+                    <div class="activity">
+                        <label for="wednesdaySubActivity3b">Taller "Las misiones de servicio y cómo predicar con el servicio"</label>
+                        <input type="checkbox" id="wednesdaySubActivity3b" name="wednesdaySubActivities3" value="wednesdaySubActivity3b">
+                    </div>
+                    <div class="activity">
+                        <label for="wednesdaySubActivity3c">Taller "Misioneros retornados, y ¿ahora que?"</label>
+                        <input type="checkbox" id="wednesdaySubActivity3c" name="wednesdaySubActivities3" value="wednesdaySubActivity3c">
+                    </div>
+                    <div class="activity">
+                        <label for="wednesdaySubActivity3d">Taller "Cómo compartir el evangelio con amigos y familiares"</label>
+                        <input type="checkbox" id="wednesdaySubActivity3d" name="wednesdaySubActivities3" value="wednesdaySubActivity3d">
+                    </div>
+                    <div class="activity">
+                        <label for="wednesdaySubActivity3e">Grabación de videos de testimonios y números musicales para publicar en redes (Plazas: 10) - Plazas restantes: <span id="wednesdayQuota3e">10</span></label>
+                        <input type="checkbox" id="wednesdaySubActivity3e" name="wednesdaySubActivities3" value="wednesdaySubActivity3e">
+                    </div>
+                    <div class="activity">
+                        <label for="wednesdaySubActivity3f">Contactar por la calle (Plazas: 56) - Plazas restantes: <span id="wednesdayQuota3f">56</span></label>
+                        <input type="checkbox" id="wednesdaySubActivity3f" name="wednesdaySubActivities3" value="wednesdaySubActivity3f">
+                    </div>
+                </div>
+            </div>
+
             <button type="submit">Enviar</button>
         </form>
     </div>
@@ -43,43 +127,29 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const quota = {
-                activity1: 5,
-                activity2: 5,
-                activity3: 5
+                tuesdayActivity1: 24,
+                tuesdaySubActivity3e: 10,
+                tuesdaySubActivity3f: 56,
+                wednesdayActivity1: 24,
+                wednesdaySubActivity3e: 10,
+                wednesdaySubActivity3f: 56
             };
 
             const form = document.getElementById('activityForm');
-            const checkboxes = form.querySelectorAll('input[type="checkbox"]');
+            const tuesdayCheckboxes = form.querySelectorAll('input[name="tuesdayActivities"]');
+            const wednesdayCheckboxes = form.querySelectorAll('input[name="wednesdayActivities"]');
+            const tuesdaySubCheckboxes = form.querySelectorAll('input[name="tuesdaySubActivities3"]');
+            const wednesdaySubCheckboxes = form.querySelectorAll('input[name="wednesdaySubActivities3"]');
 
-            checkboxes.forEach(checkbox => {
-                checkbox.addEventListener('change', function() {
-                    if (this.checked) {
-                        if (this.id === 'activity1' || this.id === 'activity2') {
-                            disableCheckboxes(['activity1', 'activity2']);
-                        }
-                    } else {
-                        if (this.id === 'activity1' || this.id === 'activity2') {
-                            enableCheckboxes(['activity1', 'activity2']);
-                        }
-                    }
-                });
+            form.addEventListener('change', function(event) {
+                handleCheckboxChange(event.target);
             });
 
             form.addEventListener('submit', function(event) {
                 event.preventDefault();
                 const selectedActivities = [];
-                checkboxes.forEach(checkbox => {
-                    if (checkbox.checked) {
-                        if (quota[checkbox.value] > 0) {
-                            selectedActivities.push(checkbox.value);
-                            quota[checkbox.value]--;
-                            document.getElementById(`quota${checkbox.value.slice(-1)}`).textContent = quota[checkbox.value];
-                        } else {
-                            alert(`No hay plazas disponibles para ${checkbox.value}`);
-                        }
-                    }
-                });
-
+                handleSubmit(tuesdayCheckboxes, 'tuesday', selectedActivities);
+                handleSubmit(wednesdayCheckboxes, 'wednesday', selectedActivities);
                 if (selectedActivities.length > 0) {
                     alert(`Te has inscrito en: ${selectedActivities.join(', ')}`);
                 } else {
@@ -87,20 +157,61 @@
                 }
             });
 
-            function disableCheckboxes(ids) {
-                ids.forEach(id => {
-                    if (id !== event.target.id) {
-                        document.getElementById(id).disabled = true;
+            function handleCheckboxChange(target) {
+                if (target.name === 'tuesdayActivities' || target.name === 'wednesdayActivities') {
+                    const subActivityDiv = document.getElementById(target.id + 'SubActivities3');
+                    if (subActivityDiv) {
+                        subActivityDiv.classList.toggle('hidden', !target.checked);
+                    }
+                }
+                handleExclusivity(target);
+            }
+
+            function handleExclusivity(target) {
+                if (target.checked) {
+                    if (target.value === 'tuesdayActivity1' || target.value === 'wednesdayActivity1') {
+                        disableOtherCheckboxes(target.name, target.value);
+                    }
+                } else {
+                    enableOtherCheckboxes(target.name);
+                }
+            }
+
+            function disableOtherCheckboxes(name, value) {
+                const checkboxes = form.querySelectorAll(`input[name="${name}"]`);
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.value !== value) {
+                        checkbox.disabled = true;
                     }
                 });
             }
 
-            function enableCheckboxes(ids) {
-                ids.forEach(id => {
-                    document.getElementById(id).disabled = false;
+            function enableOtherCheckboxes(name) {
+                const checkboxes = form.querySelectorAll(`input[name="${name}"]`);
+                checkboxes.forEach(checkbox => {
+                    checkbox.disabled = false;
+                });
+            }
+
+            function handleSubmit(checkboxes, day, selectedActivities) {
+                checkboxes.forEach(checkbox => {
+                    if (checkbox.checked) {
+                        if (quota[checkbox.value] !== undefined) {
+                            if (quota[checkbox.value] > 0) {
+                                selectedActivities.push(`${day} - ${checkbox.labels[0].textContent}`);
+                                quota[checkbox.value]--;
+                                document.getElementById(`${day}Quota${checkbox.value.slice(-1)}`).textContent = quota[checkbox.value];
+                            } else {
+                                alert(`No hay plazas disponibles para ${checkbox.labels[0].textContent}`);
+                            }
+                        } else {
+                            selectedActivities.push(`${day} - ${checkbox.labels[0].textContent}`);
+                        }
+                    }
                 });
             }
         });
     </script>
 </body>
 </html>
+
